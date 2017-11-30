@@ -22,7 +22,7 @@ catch (e) {}
 Recuerda que debes tambien cargar el script dentro del fichero html donde se vaya a utilizar:
 
 ```html
-<script type="text/javascript" src="scripts/localPreview.js"></script>
+<script type="text/javascript" src="https://services.serving-sys.com/custprojassets/prd/features/feeds/1884/localPreview.js"></script>
 ```
 
 Cuando hayas terminado con las pruebas en local, es recomendable eliminar todas las referencias a la libreria tanto del HTML como de los ficheros javascript donde se este cargando.
