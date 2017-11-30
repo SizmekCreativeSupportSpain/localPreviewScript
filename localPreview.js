@@ -1,4 +1,5 @@
 var localPreview = false;
+
 try {
 	localPreview = document.location === top.location;
 }
@@ -68,4 +69,4 @@ function initializeLocalPreview() {
 	document.getElementsByTagName("head")[0].appendChild(visibilityStyle);
 }
 
-window.addEventListener("load", initializeLocalPreview);
+initializeLocalPreview();
