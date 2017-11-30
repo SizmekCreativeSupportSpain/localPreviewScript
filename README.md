@@ -8,7 +8,18 @@ Este script simplemente genera los objetos de adServing de Sizmek para evitar er
 
 ## Configuración 
 
-Para utilizar este script, simplemente añade el script dentro del fichero html donde se vaya a utilizar:
+Para utilizar este script, simplemente añade este codigo dentro de tu javascript, despues de que se haya cargado completamente el DOM( cuando se haya lanzado el evento document.load ).
+
+```javascript
+try {
+	if (window.localPreview) {
+	    window.initializeLocalPreview();
+	}
+}
+catch (e) {}
+```
+
+Recuerda que debes tambien cargar el script dentro del fichero html donde se vaya a utilizar:
 
 ```html
 <script type="text/javascript" src="https://services.serving-sys.com/custprojassets/prd/features/feeds/1884/localPreview.js"></script>
