@@ -67,3 +67,5 @@ function initializeLocalPreview() {
 	visibilityStyle.innerHTML = "html, body, div, video {visibility: visible !important;}";
 	document.getElementsByTagName("head")[0].appendChild(visibilityStyle);
 }
+
+window.addEventListener("load", initializeLocalPreview);
